@@ -1,0 +1,11 @@
+{
+  "$schema": "https://antigravity.google/schemas/skills.json",
+  "entries": [
+    {
+      "path": "skills/engineering"
+    },
+    {
+      "path": "skills/productivity"
+    }
+  ]
+}

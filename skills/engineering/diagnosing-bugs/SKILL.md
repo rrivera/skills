@@ -52,7 +52,10 @@ The goal is not a clean repro but a **higher reproduction rate**. Loop the trigg
 
 ### When you genuinely cannot build a loop
 
-Stop and say so explicitly. List what you tried. Ask the user for: (a) access to whatever environment reproduces it, (b) a redacted captured artifact (HAR file, log dump, core dump, screen recording with timestamps), or (c) permission to add temporary production instrumentation. Do **not** proceed to hypothesise without a loop.
+Stop and say so explicitly. List what you tried. Use the `ask_question` tool to ask the user:
+- `["(Recommended) Grant access to whatever environment reproduces it", "Provide a redacted captured artifact (HAR file, log dump, core dump, screen recording with timestamps)", "Grant permission to add temporary production instrumentation"]`
+
+Wait for the user's response. Do **not** proceed to hypothesise or make code changes without user response.
 
 ### Completion criterion: a tight loop that goes red
 
